@@ -3,6 +3,11 @@ package diasSemana;
 import java.util.Scanner;
 
 //Inicio del programa y declaración de variables:
+/**
+ * Programa que dependiendo del número que introduce el usuario de 1 a 7, mostrará en consola un el día de la semana que corresponda
+ * @author Yulei
+ *
+ */
 public class DiasSemana {
 	public static void main(String[] args) {
 		try (Scanner scanner = new Scanner(System.in)) {
@@ -28,7 +33,7 @@ public class DiasSemana {
 
 	/**
 	 * @param numeroDia
-	 * @return
+	 * @return la cadena correspondiente
 	 */
 	public static String decisionDia(int numeroDia) {
 		String cadena;

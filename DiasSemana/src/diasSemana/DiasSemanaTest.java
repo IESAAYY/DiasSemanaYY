@@ -6,82 +6,114 @@ import org.junit.jupiter.api.Test;
 
 class DiasSemanaTest {
 
-	@Test
+	/** Caso válido, usuario introduce 1 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V1() {
 		assertEquals("El día seleccionado es LUNES", DiasSemana.decisionDia(1));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 2 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV1() {
 		assertEquals("El día seleccionado es MARTES", DiasSemana.decisionDia(2));
 	}
 	
-	@Test
+	/** Caso válido, usuario introduce 2 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V2() {
 		assertEquals("El día seleccionado es MARTES", DiasSemana.decisionDia(2));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 3 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV2() {
 		assertEquals("El día seleccionado es MIÉRCOLES", DiasSemana.decisionDia(3));
 	}
 	
-	@Test
+	/** Caso válido, usuario introduce 3 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V3() {
 		assertEquals("El día seleccionado es MIÉRCOLES", DiasSemana.decisionDia(3));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 4 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV3() {
 		assertEquals("El día seleccionado es JUEVES", DiasSemana.decisionDia(4));
 	}
 	
-	@Test
+	/** Caso válido, usuario introduce 4 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V4() {
 		assertEquals("El día seleccionado es JUEVES", DiasSemana.decisionDia(4));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 5 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV4() {
 		assertEquals("El día seleccionado es VIERNES", DiasSemana.decisionDia(5));
 	}
 	
-	@Test
+	/** Caso válido, usuario introduce 5 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V5() {
 		assertEquals("El día seleccionado es VIERNES", DiasSemana.decisionDia(5));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 6 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV5() {
 		assertEquals("El día seleccionado es SÁBADO", DiasSemana.decisionDia(6));
 	}
 	
-	@Test
+	/** Caso válido, usuario introduce 6 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V6() {
 		assertEquals("El día seleccionado es SÁBADO", DiasSemana.decisionDia(6));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 7 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV6() {
 		assertEquals("El día seleccionado es DOMINGO", DiasSemana.decisionDia(7));
 	}
 	
-	@Test
+	/** Caso válido, usuario introduce 7 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V7() {
 		assertEquals("El día seleccionado es DOMINGO", DiasSemana.decisionDia(7));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 8 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV7() {
 		assertEquals("ERROR: número incorrecto.", DiasSemana.decisionDia(8));
 	}
 
-	@Test
+	/** Caso válido, usuario introduce 8 y devuelve cadena correcta
+	 * @Test
+	 */
 	void V8() {
 		assertEquals("ERROR: número incorrecto.", DiasSemana.decisionDia(8));
 	}
 	
-	@Test
+	/** Caso no válido, usuario introduce 7 y devuelve cadena incorrecta
+	 * @Test
+	 */
 	void NV8() {
 		assertEquals("El día seleccionado es DOMINGO", DiasSemana.decisionDia(7));
 	}
