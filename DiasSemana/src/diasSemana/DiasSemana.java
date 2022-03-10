@@ -30,7 +30,7 @@ public class DiasSemana {
 	 * @param numeroDia
 	 * @return
 	 */
-	private static String decisionDia(int numeroDia) {
+	public static String decisionDia(int numeroDia) {
 		String cadena;
 		switch (numeroDia) {
 		case 1:
