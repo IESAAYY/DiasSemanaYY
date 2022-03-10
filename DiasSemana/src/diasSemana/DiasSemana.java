@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class DiasSemana {
 	public static void main(String[] args) {
 		try (Scanner scanner = new Scanner(System.in)) {
-			int n;
-			String s = null;
+			int numero;
+			String cadena = null;
 // Solicitud de datos al usuario
 			System.out.println("El programa te devuelve el día de la semana seleccionando:");
 			System.out.println("1.- Lunes.");
@@ -19,10 +19,10 @@ public class DiasSemana {
 			System.out.println("7.- Domingo.");
 			System.out.println("_____________________________________________________________");
 			System.out.print("Dime un número y te digo a qué día de la semana corresponde: ");
-			n = scanner.nextInt();
+			numero = scanner.nextInt();
 // Realizamos comparaciones y mostramos el resultado
-			s = decisionDia(n);
-			System.out.println(s);
+			cadena = decisionDia(numero);
+			System.out.println(cadena);
 		}
 	}
 
@@ -31,32 +31,32 @@ public class DiasSemana {
 	 * @return
 	 */
 	private static String decisionDia(int numeroDia) {
-		String s;
+		String cadena;
 		switch (numeroDia) {
 		case 1:
-			s = "El día seleccionado es LUNES";
+			cadena = "El día seleccionado es LUNES";
 			break;
 		case 2:
-			s = "El día seleccionado es MARTES";
+			cadena = "El día seleccionado es MARTES";
 			break;
 		case 3:
-			s = "El día seleccionado es MIÉRCOLES";
+			cadena = "El día seleccionado es MIÉRCOLES";
 			break;
 		case 4:
-			s = "El día seleccionado es JUEVES";
+			cadena = "El día seleccionado es JUEVES";
 			break;
 		case 5:
-			s = "El día seleccionado es VIERNES";
+			cadena = "El día seleccionado es VIERNES";
 			break;
 		case 6:
-			s = "El día seleccionado es SÁBADO";
+			cadena = "El día seleccionado es SÁBADO";
 			break;
 		case 7:
-			s = "El día seleccionado es DOMINGO";
+			cadena = "El día seleccionado es DOMINGO";
 			break;
 		default:
-			s = "ERROR: número incorrecto.";
+			cadena = "ERROR: número incorrecto.";
 		}
-		return s;
+		return cadena;
 	}
 }
