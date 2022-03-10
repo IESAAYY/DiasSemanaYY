@@ -21,32 +21,42 @@ public class DiasSemana {
 			System.out.print("Dime un número y te digo a qué día de la semana corresponde: ");
 			n = scanner.nextInt();
 // Realizamos comparaciones y mostramos el resultado
-			switch (n) {
-			case 1:
-				s = "El día seleccionado es LUNES";
-				break;
-			case 2:
-				s = "El día seleccionado es MARTES";
-				break;
-			case 3:
-				s = "El día seleccionado es MIÉRCOLES";
-				break;
-			case 4:
-				s = "El día seleccionado es JUEVES";
-				break;
-			case 5:
-				s = "El día seleccionado es VIERNES";
-				break;
-			case 6:
-				s = "El día seleccionado es SÁBADO";
-				break;
-			case 7:
-				s = "El día seleccionado es DOMINGO";
-				break;
-			default:
-				s = "ERROR: número incorrecto.";
-			}
+			s = decisionDia(n);
 			System.out.println(s);
 		}
+	}
+
+	/**
+	 * @param numeroDia
+	 * @return
+	 */
+	private static String decisionDia(int numeroDia) {
+		String s;
+		switch (numeroDia) {
+		case 1:
+			s = "El día seleccionado es LUNES";
+			break;
+		case 2:
+			s = "El día seleccionado es MARTES";
+			break;
+		case 3:
+			s = "El día seleccionado es MIÉRCOLES";
+			break;
+		case 4:
+			s = "El día seleccionado es JUEVES";
+			break;
+		case 5:
+			s = "El día seleccionado es VIERNES";
+			break;
+		case 6:
+			s = "El día seleccionado es SÁBADO";
+			break;
+		case 7:
+			s = "El día seleccionado es DOMINGO";
+			break;
+		default:
+			s = "ERROR: número incorrecto.";
+		}
+		return s;
 	}
 }
